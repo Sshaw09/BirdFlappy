@@ -16,5 +16,11 @@ public class MoveLeft : MonoBehaviour
     void Update()
     {
         transform.Translate(Vector2.left * Time.deltaTime * speed);
+
+        //Destroy pipes off screan
+        if(transform.position.magnitude > 20f)
+        {
+            Destroy(gameObject);
+        }
     }
 }
