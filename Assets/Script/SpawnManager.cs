@@ -5,7 +5,7 @@ using UnityEngine;
 public class SpawnManager : MonoBehaviour
 {
     public GameObject pipePrefab;
-    float randomHeight = 0.1f;
+    float randomHeight = 0.7f;
     // Start is called before the first frame update
     void Start()
     {

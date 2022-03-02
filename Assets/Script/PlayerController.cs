@@ -17,7 +17,7 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Space))
         {
-        bird.AddForce(new Vector2(0,1) * 200);
+        bird.AddForce(new Vector2(0,1) * 250);
         }
 
 
