@@ -25,7 +25,12 @@ public class PlayerController : MonoBehaviour
      }
    public void OnTriggerEnter2D(Collider2D other) 
    {
-       
+       if(other.gameObject.CompareTag("Point"))
+       {
+           //Increase score by 1
+           score = score + 1;
+           scoreUI.text=score.ToString();
+       }
    } 
    
 }
