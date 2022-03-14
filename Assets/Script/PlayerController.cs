@@ -28,7 +28,8 @@ public class PlayerController : MonoBehaviour
        if(other.gameObject.CompareTag("Point"))
        {
            //Increase score by 1
-           score = score + 1;
+           //score = score + 1;
+           score += 1;
            scoreUI.text=score.ToString();
        }
    } 
